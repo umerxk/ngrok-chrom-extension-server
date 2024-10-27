@@ -39,7 +39,7 @@ app.get("/", async (req, res) => {
     res.send("server is running...");
 })
 
-const PORT = 3010;
+const PORT = 8000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
