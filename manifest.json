@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Ngrok URL Generator",
+    "version": "1.0",
+    "description": "Generates an ngrok URL if an app is running on localhost",
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "background",
+        "storage",
+        "scripting"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "http://localhost/*",
+        "https://localhost/*"
+    ]
+}
